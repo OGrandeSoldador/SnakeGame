@@ -1,0 +1,2665 @@
+[gd_scene load_steps=224 format=3 uid="uid://b4juaiksf00hd"]
+
+[ext_resource type="Script" path="res://MainScript/main.gd" id="1_1awhp"]
+[ext_resource type="Shader" path="res://UI/UI_Style/BlurShader.gdshader" id="3_cxx1h"]
+[ext_resource type="Texture2D" uid="uid://ql8ri5ev23qf" path="res://assets/MenuSide/Menu.png" id="4_aine0"]
+[ext_resource type="Script" path="res://UI/menu_lateral.gd" id="4_kcolg"]
+[ext_resource type="Script" path="res://UI/restart_button.gd" id="5_qdywj"]
+[ext_resource type="Texture2D" uid="uid://bv28bh27l3rrw" path="res://assets/Snake Game Assets/Buttons/Restart/Restart Buttom1.png" id="6_cvjqu"]
+[ext_resource type="Script" path="res://UI/confim_restart.gd" id="6_u71ul"]
+[ext_resource type="Texture2D" uid="uid://daq0loqhyed7p" path="res://assets/Snake Game Assets/Buttons/Restart/Restart Buttom Focus (3).png" id="6_vfb2l"]
+[ext_resource type="Texture2D" uid="uid://bcmaf5mg5jytv" path="res://assets/Snake Game Assets/Buttons/Restart/Restart Buttom Focus (4).png" id="7_ha003"]
+[ext_resource type="Script" path="res://UI/recuse_restart.gd" id="7_ypm67"]
+[ext_resource type="Script" path="res://UI/pause_button.gd" id="8_hfmo7"]
+[ext_resource type="Texture2D" uid="uid://bbtm0f411yem" path="res://assets/Snake Game Assets/Buttons/Restart/Restart Buttom Focus (5).png" id="8_w5y3m"]
+[ext_resource type="Texture2D" uid="uid://dp5i72sa1y6t7" path="res://assets/Snake Game Assets/Buttons/Restart/Restart Buttom Focus (1).png" id="9_d27tt"]
+[ext_resource type="Script" path="res://UI/quit_button.gd" id="9_opp8t"]
+[ext_resource type="Script" path="res://UI/ConfirmQuit.gd" id="10_d3b3e"]
+[ext_resource type="Texture2D" uid="uid://bfos186vousmm" path="res://assets/Snake Game Assets/Buttons/Restart/Restart Buttom Focus (2).png" id="10_vd6b2"]
+[ext_resource type="Script" path="res://UI/recuse_quit.gd" id="11_2hr8j"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/RestartAnimation.gd" id="11_5juvp"]
+[ext_resource type="Script" path="res://UI/volume_button.gd" id="12_8eso0"]
+[ext_resource type="FontFile" uid="uid://b8khqh7iv10vd" path="res://assets/Fonts/pixelade/PIXELADE.TTF" id="14_laa0b"]
+[ext_resource type="Script" path="res://scenes/ui_manager.gd" id="14_r8d74"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/animated_sprite_2d.gd" id="16_3jffc"]
+[ext_resource type="Texture2D" uid="uid://cl14a4m6jtuv0" path="res://assets/Snake Game Assets/Buttons/Pause/Pause Buttom9.png" id="18_dmnct"]
+[ext_resource type="Texture2D" uid="uid://bmlklm7rglodk" path="res://assets/Snake Game Assets/Buttons/Pause/Glow.png" id="18_mjpew"]
+[ext_resource type="Texture2D" uid="uid://d2jm73i1nuhaf" path="res://assets/Snake Game Assets/Buttons/Quit/Quit Buttom1.png" id="18_p38ev"]
+[ext_resource type="Texture2D" uid="uid://d4blsqen6rdmj" path="res://assets/Snake Game Assets/Buttons/Pause/AllGlow2.png" id="19_2snfl"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/confirm_animation_restart.gd" id="19_t7so3"]
+[ext_resource type="Texture2D" uid="uid://m8senrmjirhc" path="res://assets/Snake Game Assets/Buttons/Pause/AllGlow3.png" id="20_sv28h"]
+[ext_resource type="Texture2D" uid="uid://8ag86ejc82nu" path="res://assets/Snake Game Assets/Buttons/Pause/AllGlow4.png" id="21_yycn3"]
+[ext_resource type="Texture2D" uid="uid://b5jdk70yo7v3k" path="res://assets/Snake Game Assets/Buttons/Pause/AllGlow5.png" id="22_qsh35"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/recuse_animation_restart.gd" id="25_dtdhc"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/quit_animation.gd" id="26_56diy"]
+[ext_resource type="Texture2D" uid="uid://dche55ikeeeix" path="res://assets/Snake Game Assets/Buttons/Quit/Quit Buttom Focus (2).png" id="26_ot820"]
+[ext_resource type="Texture2D" uid="uid://chhykmbrw7l1m" path="res://assets/Snake Game Assets/Buttons/Quit/Quit Buttom Focus (3).png" id="27_ika4e"]
+[ext_resource type="Texture2D" uid="uid://blonut1w6ooxg" path="res://assets/Snake Game Assets/Buttons/Quit/Quit Buttom Focus (4).png" id="28_ftdjj"]
+[ext_resource type="Texture2D" uid="uid://co7c2gxjebjio" path="res://assets/Snake Game Assets/Buttons/Quit/Quit Buttom Focus (5).png" id="29_rw31u"]
+[ext_resource type="Texture2D" uid="uid://d3seag4o4lyb5" path="res://assets/Snake Game Assets/Buttons/Quit/Quit Buttom Focus (1).png" id="30_wyp6h"]
+[ext_resource type="Texture2D" uid="uid://ct8aqculkeqqq" path="res://assets/Snake Game Assets/Buttons/Quit/Confirm/Confirm Focus (2).png" id="32_nwauc"]
+[ext_resource type="Texture2D" uid="uid://bt2p4pwupui5f" path="res://assets/Snake Game Assets/Buttons/Quit/Confirm/Confirm Focus (3).png" id="33_2ilew"]
+[ext_resource type="Texture2D" uid="uid://drvamcfxdn3xa" path="res://assets/Snake Game Assets/Buttons/Quit/Confirm/Confirm Focus (5).png" id="34_4axog"]
+[ext_resource type="Texture2D" uid="uid://cb5xf7cl3uank" path="res://assets/Snake Game Assets/Buttons/Quit/Confirm/Confirm Focus (4).png" id="35_3abbe"]
+[ext_resource type="Texture2D" uid="uid://cmm5vp1mprxaa" path="res://assets/Snake Game Assets/Buttons/Sound/Sound Buttom Focus (1).png" id="36_3pacs"]
+[ext_resource type="Texture2D" uid="uid://dqs503u34oq1x" path="res://assets/Snake Game Assets/Buttons/Sound/Sound Buttom Focus (2).png" id="37_aw5jm"]
+[ext_resource type="Texture2D" uid="uid://d0ipedehk005w" path="res://assets/Snake Game Assets/Buttons/Quit/Confirm/Confirm1.png" id="37_yvy3f"]
+[ext_resource type="Texture2D" uid="uid://c8p1qm1wfd5ys" path="res://assets/Snake Game Assets/Buttons/Sound/Sound Buttom Focus (3).png" id="38_jbhv1"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/confirm_animation.gd" id="38_kkc54"]
+[ext_resource type="Texture2D" uid="uid://dr6x8dsi4cuv0" path="res://assets/Snake Game Assets/Buttons/Sound/Sound Buttom Focus (4).png" id="39_3i26w"]
+[ext_resource type="Texture2D" uid="uid://cs6okq63d7ha2" path="res://assets/Snake Game Assets/Buttons/Quit/cancel/Cancel Focus (3).png" id="39_6dchd"]
+[ext_resource type="Texture2D" uid="uid://boyxsj5ort88b" path="res://assets/Snake Game Assets/Buttons/Sound/Sound Buttom1.png" id="39_epm82"]
+[ext_resource type="Texture2D" uid="uid://d35n8cyrontam" path="res://assets/Snake Game Assets/Buttons/Sound/Sound Buttom Focus (5).png" id="40_he0v8"]
+[ext_resource type="Texture2D" uid="uid://6i3psfo61ogl" path="res://assets/Snake Game Assets/Buttons/Quit/cancel/Cancel Focus (4).png" id="41_48cxj"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/recuse_animation.gd" id="41_ne3fn"]
+[ext_resource type="Texture2D" uid="uid://bay8vs12u5p5l" path="res://assets/Snake Game Assets/Buttons/Volume.png" id="41_u3yc3"]
+[ext_resource type="Texture2D" uid="uid://c4mheed0mvahq" path="res://assets/Snake Game Assets/Buttons/Quit/cancel/Cancel Focus (1).png" id="42_rc875"]
+[ext_resource type="Texture2D" uid="uid://6qwi1lk3os8d" path="res://assets/Snake Game Assets/Buttons/Quit/cancel/Cancel1.png" id="42_weltb"]
+[ext_resource type="Texture2D" uid="uid://bec5mvvuk1623" path="res://assets/Snake Game Assets/Buttons/Quit/cancel/Cancel Focus (5).png" id="43_2wi08"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/volume_animation.gd" id="47_cvhnq"]
+[ext_resource type="Script" path="res://UI/UI_Scripts/score_curr.gd" id="57_2hf27"]
+[ext_resource type="Texture2D" uid="uid://cxj0i2h6sddai" path="res://assets/Buttons/Video Config/FullScren/FullScren1.png" id="57_nre11"]
+[ext_resource type="Texture2D" uid="uid://wyyjib84fktn" path="res://assets/Buttons/Video Config/FullScren/FullScren2.png" id="58_8kpsq"]
+[ext_resource type="Script" path="res://UI/UI_Scripts/score.gd" id="58_h6osu"]
+[ext_resource type="Texture2D" uid="uid://bw7c1ii0xiuyy" path="res://assets/Buttons/Video Config/FullScren/FullScren3.png" id="59_ki2hd"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/fullscreen_button.gd" id="60_h68ao"]
+[ext_resource type="Texture2D" uid="uid://m6fghxr1f66d" path="res://assets/Buttons/Video Config/Bordeless/Bordeless1.png" id="61_fbwk0"]
+[ext_resource type="Texture2D" uid="uid://y0dv3o5g521a" path="res://assets/Buttons/Video Config/Bordeless/Bordeless2.png" id="62_tuejb"]
+[ext_resource type="Texture2D" uid="uid://6u3bk4qp4ax5" path="res://assets/Buttons/Video Config/Bordeless/Bordeless3.png" id="63_7uq8h"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/borderless_button.gd" id="64_f68mf"]
+[ext_resource type="Texture2D" uid="uid://4wbulmdogx17" path="res://assets/Buttons/Video Config/Windowed/Windowed1.png" id="65_a680e"]
+[ext_resource type="Texture2D" uid="uid://cd4e8gtuni44r" path="res://assets/Buttons/Video Config/Windowed/Windowed2.png" id="66_n1f1n"]
+[ext_resource type="Texture2D" uid="uid://dp6yfthidn83b" path="res://assets/Buttons/Video Config/Windowed/Windowed3.png" id="67_6pi6h"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/windowed_animation.gd" id="68_njfo4"]
+[ext_resource type="Texture2D" uid="uid://brdvk1ky8upqi" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game1.png" id="70_kwlo7"]
+[ext_resource type="Script" path="res://UI/UI_Manager/splash_screen.gd" id="71_7d86t"]
+[ext_resource type="Texture2D" uid="uid://6mn3bujjtiqd" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game3.png" id="71_j7jbv"]
+[ext_resource type="Texture2D" uid="uid://dq0xlb118122o" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game5.png" id="72_8t70e"]
+[ext_resource type="Texture2D" uid="uid://u8bpc41s1svd" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game7.png" id="73_b6nci"]
+[ext_resource type="Texture2D" uid="uid://c4qqh5hbmthyv" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game8.png" id="74_h3rtd"]
+[ext_resource type="Texture2D" uid="uid://bn3bn8qo3pts1" path="res://assets/Main scenes/Snake Game/Click/Click4.png" id="75_6s2oh"]
+[ext_resource type="Texture2D" uid="uid://d0ya4uvxno584" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game11.png" id="75_p2nry"]
+[ext_resource type="Texture2D" uid="uid://bls3ajuafqhan" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game13.png" id="76_l0lib"]
+[ext_resource type="Texture2D" uid="uid://dg6npx0ngqy02" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game15.png" id="77_rfl3k"]
+[ext_resource type="Texture2D" uid="uid://dvjlemksyn3cw" path="res://assets/Main scenes/Snake Game/Snake Game/Snake Game17.png" id="78_1amfq"]
+[ext_resource type="Texture2D" uid="uid://cwd7vp7dy48h5" path="res://assets/Snake Game Assets/Background_Snake.png" id="79_uuyas"]
+[ext_resource type="Texture2D" uid="uid://cwpijdrcm8n1n" path="res://assets/Main scenes/Pause/Pause/Pause Animation.png" id="81_a6uxa"]
+[ext_resource type="Texture2D" uid="uid://bonu5greogkmn" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade1.png" id="81_c51si"]
+[ext_resource type="Texture2D" uid="uid://dt7ut041hg13n" path="res://assets/Main scenes/Pause/One/One1.png" id="81_j6imj"]
+[ext_resource type="Texture2D" uid="uid://de546faeh77xm" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade2.png" id="82_4et85"]
+[ext_resource type="Texture2D" uid="uid://c66l57wf185o4" path="res://assets/Main scenes/Pause/One/One2.png" id="82_l7b7n"]
+[ext_resource type="Texture2D" uid="uid://bb0vkmk3uf8tj" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade3.png" id="83_qgkrp"]
+[ext_resource type="Texture2D" uid="uid://ok1y5rley41j" path="res://assets/Main scenes/Pause/One/One3.png" id="83_wqf6k"]
+[ext_resource type="Texture2D" uid="uid://dl3omx3ssmuj2" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade4.png" id="84_rk8yk"]
+[ext_resource type="Texture2D" uid="uid://bkyaptvveohaw" path="res://assets/Main scenes/Pause/One/One4.png" id="84_t5m0w"]
+[ext_resource type="Texture2D" uid="uid://cic15iydemjld" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade5.png" id="85_ptijx"]
+[ext_resource type="Texture2D" uid="uid://db4o8e153jcdv" path="res://assets/Main scenes/Pause/One/One5.png" id="85_yaji4"]
+[ext_resource type="Texture2D" uid="uid://dm0nyg2xcuk5n" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade6.png" id="86_81rpn"]
+[ext_resource type="Texture2D" uid="uid://btrcublqt30p3" path="res://assets/Main scenes/Pause/Two/Two1.png" id="86_f3gy5"]
+[ext_resource type="Texture2D" uid="uid://cv1lilm7bf26l" path="res://assets/Main scenes/Pause/Two/Two2.png" id="87_hulo7"]
+[ext_resource type="Texture2D" uid="uid://bw63gyarv3ouk" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade8.png" id="88_h7y8w"]
+[ext_resource type="Texture2D" uid="uid://bea2hur5tpkes" path="res://assets/Main scenes/Pause/Two/Two3.png" id="88_qg6ts"]
+[ext_resource type="Texture2D" uid="uid://0o61jpcfgfs6" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade9.png" id="89_cmcu5"]
+[ext_resource type="Texture2D" uid="uid://bgaamh64xowxt" path="res://assets/Main scenes/Pause/Two/Two4.png" id="89_d8tgn"]
+[ext_resource type="Texture2D" uid="uid://comj5qh3712pn" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade10.png" id="90_83fyf"]
+[ext_resource type="Texture2D" uid="uid://cljsrmsb1p8ww" path="res://assets/Main scenes/Pause/Two/Two5.png" id="90_kt6um"]
+[ext_resource type="Texture2D" uid="uid://cqcbdyrsms11u" path="res://assets/Main scenes/Pause/Go!/Go!1.png" id="91_451se"]
+[ext_resource type="Texture2D" uid="uid://hkiigg4irw7v" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade11.png" id="91_a6sdr"]
+[ext_resource type="Texture2D" uid="uid://jigb4tw46g7e" path="res://assets/Main scenes/Pause/Go!/Go!2.png" id="92_5sosc"]
+[ext_resource type="Texture2D" uid="uid://dc5l7ryeoi446" path="res://assets/Main scenes/Snake Game/SnakeFade/SnakeFade12.png" id="92_qvoy0"]
+[ext_resource type="Texture2D" uid="uid://cekt5ja7hxn4f" path="res://assets/Main scenes/Pause/Go!/Go!3.png" id="93_bx2kp"]
+[ext_resource type="Texture2D" uid="uid://c8bes5hxhfy21" path="res://assets/Main scenes/Snake Game/Click/Click1.png" id="93_rxluf"]
+[ext_resource type="Texture2D" uid="uid://mb66g18103ul" path="res://assets/Main scenes/Snake Game/Click/Click2.png" id="94_saf0r"]
+[ext_resource type="Texture2D" uid="uid://ich6ekrcgf21" path="res://assets/Main scenes/Pause/Go!/Go!4.png" id="94_t4bww"]
+[ext_resource type="Texture2D" uid="uid://dw12f7npnnnuh" path="res://assets/Main scenes/Pause/Go!/Go!5.png" id="95_pqlql"]
+[ext_resource type="Texture2D" uid="uid://dqkfwnysinl3b" path="res://assets/Main scenes/Snake Game/Click/Click3.png" id="95_qf212"]
+[ext_resource type="Texture2D" uid="uid://2dk85bi6ivb7" path="res://assets/Main scenes/Pause/Go!/Go!6.png" id="96_k62i6"]
+[ext_resource type="Texture2D" uid="uid://0d4xeg0v6jv2" path="res://assets/Main scenes/Pause/Go!/Go!7.png" id="97_c4hky"]
+[ext_resource type="Texture2D" uid="uid://0aqyqkxha6uf" path="res://assets/Main scenes/Snake Game/Click/Click5.png" id="97_x4e2d"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/MenuScreenScript/menu_screen.gd" id="98_pisna"]
+[ext_resource type="Texture2D" uid="uid://chtuvbehlcfa" path="res://assets/Main scenes/Main Menu/Table/Table Void.png" id="99_oioso"]
+[ext_resource type="Texture2D" uid="uid://bqwfnenl7h87r" path="res://assets/Main scenes/Main Menu/Play/Play1.png" id="100_wxuen"]
+[ext_resource type="Texture2D" uid="uid://bmfhprgyqlno2" path="res://assets/Main scenes/Main Menu/Play/Play2.png" id="101_y5xy0"]
+[ext_resource type="Texture2D" uid="uid://biqy54rjm11e6" path="res://assets/Main scenes/Main Menu/Play/Play3.png" id="102_p4vun"]
+[ext_resource type="Texture2D" uid="uid://6la340dmxuda" path="res://assets/Main scenes/Main Menu/Play/Play4.png" id="103_maibs"]
+[ext_resource type="Texture2D" uid="uid://tr2dfsmunmlg" path="res://assets/Main scenes/Main Menu/Play/Play5.png" id="104_uj8tg"]
+[ext_resource type="Texture2D" uid="uid://u42tpgymvl3s" path="res://assets/Main scenes/Main Menu/Backward/Back1.png" id="105_euwqy"]
+[ext_resource type="Texture2D" uid="uid://biap4sv8uk5pj" path="res://assets/Main scenes/Main Menu/Backward/Back2.png" id="106_x1dtc"]
+[ext_resource type="Texture2D" uid="uid://difg0cn36twhf" path="res://assets/Main scenes/Main Menu/Backward/Back3.png" id="107_3gp6g"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/menu_start_animation.gd" id="107_e1yid"]
+[ext_resource type="Texture2D" uid="uid://0yw8tnbs6ufe" path="res://assets/Main scenes/Main Menu/Backward/Back7.png" id="108_sgb7n"]
+[ext_resource type="Texture2D" uid="uid://bmr0fgtqegw5q" path="res://assets/Main scenes/Main Menu/Backward/Back8.png" id="109_rnuq6"]
+[ext_resource type="Texture2D" uid="uid://c5ag5ui76hqit" path="res://assets/Main scenes/Main Menu/Backward/Back5.png" id="110_tm73v"]
+[ext_resource type="Texture2D" uid="uid://biduwoqc0bbaq" path="res://assets/Main scenes/Main Menu/Foward/Next1.png" id="111_d46jd"]
+[ext_resource type="Texture2D" uid="uid://it6eakwdcjj1" path="res://assets/Main scenes/Main Menu/Foward/Next2.png" id="112_7yrbi"]
+[ext_resource type="Texture2D" uid="uid://dm037ty1k8oi7" path="res://assets/Main scenes/Main Menu/Foward/Next3.png" id="113_aftuy"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/preview_start_animation.gd" id="113_xetum"]
+[ext_resource type="Script" path="res://UI/UI_Style/AnimationsScripts/next_start_animation.gd" id="116_nj2uh"]
+[ext_resource type="Texture2D" uid="uid://rq576gun0q0c" path="res://assets/Main scenes/Game Over/Game Over/Game Over1.png" id="117_0l1w6"]
+[ext_resource type="Texture2D" uid="uid://btmxgkn53kbl5" path="res://assets/Main scenes/Game Over/Game Over/Game Over2.png" id="118_t700y"]
+[ext_resource type="Texture2D" uid="uid://b5jisgex6xdgd" path="res://assets/Main scenes/Game Over/Game Over/Game Over3.png" id="119_dcoth"]
+[ext_resource type="Texture2D" uid="uid://c2rmspay3aqmc" path="res://assets/Main scenes/Game Over/Game Over/Game Over4.png" id="120_civ5m"]
+[ext_resource type="Texture2D" uid="uid://cuwgsaenhkagc" path="res://assets/Main scenes/Game Over/Game Over/Game Over5.png" id="121_bq42n"]
+[ext_resource type="Texture2D" uid="uid://cxgq0d05ui1q4" path="res://assets/Main scenes/Game Over/Game Over/Game Over6.png" id="122_5ffrs"]
+[ext_resource type="Texture2D" uid="uid://b5x410umbsgb3" path="res://assets/Main scenes/Game Over/Game Over/Game Over7.png" id="123_bumye"]
+[ext_resource type="Texture2D" uid="uid://4oixrq3s77xa" path="res://assets/Main scenes/Game Over/Game Over/Game Over8.png" id="124_pydkw"]
+[ext_resource type="Texture2D" uid="uid://g7q5rcqrynfg" path="res://assets/Main scenes/Game Over/Game Over/Game Over9.png" id="125_wor2j"]
+[ext_resource type="Texture2D" uid="uid://4vbbbc1h52k1" path="res://assets/Main scenes/Game Over/Game Over/Game Over10.png" id="126_0r5d0"]
+[ext_resource type="Texture2D" uid="uid://b3nmrv1rbyhlo" path="res://assets/Main scenes/Game Over/Game Over/Game Over11.png" id="127_w142d"]
+[ext_resource type="Texture2D" uid="uid://b0bpbmljhh1ad" path="res://assets/Main scenes/Game Over/Game Over/Game Over12.png" id="128_nm6ly"]
+[ext_resource type="Texture2D" uid="uid://wv4saxxfffo8" path="res://assets/Main scenes/Game Over/Game Over/Game Over13.png" id="129_fct5f"]
+[ext_resource type="Texture2D" uid="uid://drg0j1ru5ksmd" path="res://assets/Main scenes/Game Over/Game Over/Game Over14.png" id="130_wwpsi"]
+[ext_resource type="Texture2D" uid="uid://b75cpet0iw0ve" path="res://assets/Main scenes/Game Over/Game Over/Game Over15.png" id="131_aimpv"]
+[ext_resource type="Texture2D" uid="uid://dea1iwj3wsyq" path="res://assets/Main scenes/Game Over/Game Over/Game Over16.png" id="132_kq8sy"]
+[ext_resource type="Texture2D" uid="uid://bo3sts1bmvyxc" path="res://assets/Main scenes/Game Over/Record/Record1.png" id="133_qdrjk"]
+[ext_resource type="Texture2D" uid="uid://b6x73ienyslgl" path="res://assets/Main scenes/Game Over/Record/Record2.png" id="134_xolaj"]
+[ext_resource type="Texture2D" uid="uid://diis7ny1d3l8j" path="res://assets/Main scenes/Game Over/Record/Record3.png" id="135_b0oy8"]
+[ext_resource type="Script" path="res://UI/UI_Scripts/game_over_screen.gd" id="135_ptrun"]
+[ext_resource type="Texture2D" uid="uid://clik5usytjw13" path="res://assets/Main scenes/Game Over/Record/Record4.png" id="136_c707h"]
+[ext_resource type="Texture2D" uid="uid://c2vqqsqhgg2to" path="res://assets/Main scenes/Game Over/Record/Record5.png" id="137_dwkxm"]
+[ext_resource type="Texture2D" uid="uid://bu8n8m07kkq7n" path="res://assets/Main scenes/Game Over/Record/Record6.png" id="138_qi33m"]
+[ext_resource type="Texture2D" uid="uid://br8qitjsdyq4n" path="res://assets/Main scenes/Game Over/Record/Record7.png" id="139_gxrep"]
+[ext_resource type="Texture2D" uid="uid://bqlt62h7usks" path="res://assets/Main scenes/Game Over/Record/Record8.png" id="140_se1x3"]
+[ext_resource type="Texture2D" uid="uid://c6ghnsyl32kug" path="res://assets/Main scenes/Game Over/Record/Record9.png" id="141_na0jy"]
+[ext_resource type="Texture2D" uid="uid://3yifryguu7e1" path="res://assets/Main scenes/Game Over/Record/Record10.png" id="142_wv0ca"]
+[ext_resource type="Texture2D" uid="uid://dxnd61x1aob15" path="res://assets/Main scenes/Game Over/Name/Name.png" id="144_itvqy"]
+[ext_resource type="Texture2D" uid="uid://blygv3araarsw" path="res://assets/Main scenes/Game Over/Tabela/Table Void/TableVoid.png" id="162_3c02t"]
+[ext_resource type="Texture2D" uid="uid://cgb6ska2rwawx" path="res://assets/Main scenes/Game Over/Restart/Restart5.png" id="163_e2yvi"]
+[ext_resource type="Texture2D" uid="uid://b7vx64u7agm6q" path="res://assets/Main scenes/Game Over/Restart/Restart6.png" id="164_q45lc"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/gameplay.gd" id="164_vvqjh"]
+[ext_resource type="Texture2D" uid="uid://dgwl7a6454sao" path="res://assets/Main scenes/Game Over/Restart/Restart7.png" id="165_prfv8"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/snake.gd" id="165_qus2p"]
+[ext_resource type="Texture2D" uid="uid://dshc8hhdiqbxl" path="res://assets/Tileset/Snake/Tileset.png" id="165_vtbvu"]
+[ext_resource type="Script" path="res://UI/RestartGameOverbutton.gd" id="166_5h7cp"]
+[ext_resource type="Texture2D" uid="uid://ijiuatc7uckm" path="res://assets/Snake Game Assets/Snake Sprites/head.png" id="166_bsgdc"]
+[ext_resource type="Script" path="res://assets/Tileset/SnakeScriptTileSet/snake_tiles.gd" id="166_gavnp"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/body.gd" id="167_y8cqw"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/effects.gd" id="168_l1kw6"]
+[ext_resource type="Texture2D" uid="uid://dgwgj2cj2goch" path="res://assets/Snake Game Assets/Snake Sprites/Square.png" id="169_n1eil"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/mapa_1.gd" id="170_qpl1d"]
+[ext_resource type="Texture2D" uid="uid://coqwmrpngpfsc" path="res://assets/Tileset/Wood/Wood1.png" id="171_cyt7p"]
+[ext_resource type="Texture2D" uid="uid://dtfoe8qjlg23m" path="res://assets/Tileset/Wood/Wood4.png" id="172_ccjeg"]
+[ext_resource type="Texture2D" uid="uid://il0hxpt21nuo" path="res://assets/Tileset/Wood/Wood2.png" id="173_isec5"]
+[ext_resource type="Texture2D" uid="uid://byj4skq1k4in5" path="res://assets/Tileset/Wood/Wood3.png" id="174_cxsew"]
+[ext_resource type="Texture2D" uid="uid://dbromood055c7" path="res://assets/Snake Game Assets/Snake Sprites/head_P2.png" id="174_jphq8"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/items.gd" id="175_yv7lc"]
+[ext_resource type="Texture2D" uid="uid://bb38pwuiw5kfl" path="res://assets/Snake Game Assets/Items/AppleSprite 256.png" id="176_gq1qh"]
+[ext_resource type="Texture2D" uid="uid://c50gxxom3jt7d" path="res://assets/Snake Game Assets/Snake Sprites/sprite_P2.png" id="178_jerig"]
+
+[sub_resource type="Gradient" id="Gradient_bj77k"]
+offsets = PackedFloat32Array(0.956522, 0.963768, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.14, 0.0364, 0.0709333, 0.537255, 0.1, 0.026, 0.0506667, 0.235294)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_t2vwk"]
+gradient = SubResource("Gradient_bj77k")
+width = 128
+height = 640
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lcsv8"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("6_vfb2l")
+}, {
+"duration": 0.2,
+"texture": ExtResource("7_ha003")
+}, {
+"duration": 0.2,
+"texture": ExtResource("8_w5y3m")
+}, {
+"duration": 0.3,
+"texture": ExtResource("9_d27tt")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("6_vfb2l")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("9_d27tt")
+}, {
+"duration": 0.2,
+"texture": ExtResource("8_w5y3m")
+}, {
+"duration": 0.2,
+"texture": ExtResource("7_ha003")
+}, {
+"duration": 0.2,
+"texture": ExtResource("6_vfb2l")
+}, {
+"duration": 0.3,
+"texture": ExtResource("10_vd6b2")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("6_cvjqu")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t68cr"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("34_4axog")
+}, {
+"duration": 0.3,
+"texture": ExtResource("35_3abbe")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("34_4axog")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("35_3abbe")
+}, {
+"duration": 0.2,
+"texture": ExtResource("33_2ilew")
+}, {
+"duration": 0.3,
+"texture": ExtResource("32_nwauc")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("37_yvy3f")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gwg7a"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("41_48cxj")
+}, {
+"duration": 0.3,
+"texture": ExtResource("43_2wi08")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("41_48cxj")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("43_2wi08")
+}, {
+"duration": 0.2,
+"texture": ExtResource("41_48cxj")
+}, {
+"duration": 0.3,
+"texture": ExtResource("39_6dchd")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("42_weltb")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_youy2"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("19_2snfl")
+}, {
+"duration": 0.2,
+"texture": ExtResource("20_sv28h")
+}, {
+"duration": 0.2,
+"texture": ExtResource("21_yycn3")
+}, {
+"duration": 0.3,
+"texture": ExtResource("22_qsh35")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("19_2snfl")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("22_qsh35")
+}, {
+"duration": 0.2,
+"texture": ExtResource("21_yycn3")
+}, {
+"duration": 0.2,
+"texture": ExtResource("20_sv28h")
+}, {
+"duration": 0.2,
+"texture": ExtResource("19_2snfl")
+}, {
+"duration": 0.3,
+"texture": ExtResource("18_mjpew")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("18_dmnct")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_asouk"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("27_ika4e")
+}, {
+"duration": 0.2,
+"texture": ExtResource("28_ftdjj")
+}, {
+"duration": 0.2,
+"texture": ExtResource("29_rw31u")
+}, {
+"duration": 0.3,
+"texture": ExtResource("30_wyp6h")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("27_ika4e")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("30_wyp6h")
+}, {
+"duration": 0.2,
+"texture": ExtResource("29_rw31u")
+}, {
+"duration": 0.2,
+"texture": ExtResource("28_ftdjj")
+}, {
+"duration": 0.2,
+"texture": ExtResource("27_ika4e")
+}, {
+"duration": 0.3,
+"texture": ExtResource("26_ot820")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("18_p38ev")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ys7pk"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("33_2ilew")
+}, {
+"duration": 0.3,
+"texture": ExtResource("35_3abbe")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("33_2ilew")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("35_3abbe")
+}, {
+"duration": 0.2,
+"texture": ExtResource("34_4axog")
+}, {
+"duration": 0.3,
+"texture": ExtResource("32_nwauc")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("37_yvy3f")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m18ev"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("42_rc875")
+}, {
+"duration": 0.3,
+"texture": ExtResource("43_2wi08")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("42_rc875")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("43_2wi08")
+}, {
+"duration": 0.2,
+"texture": ExtResource("42_rc875")
+}, {
+"duration": 0.3,
+"texture": ExtResource("39_6dchd")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("42_weltb")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y5ec0"]
+animations = [{
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("36_3pacs")
+}, {
+"duration": 0.3,
+"texture": ExtResource("37_aw5jm")
+}, {
+"duration": 0.3,
+"texture": ExtResource("38_jbhv1")
+}, {
+"duration": 0.3,
+"texture": ExtResource("39_3i26w")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("36_3pacs")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("39_3i26w")
+}, {
+"duration": 0.2,
+"texture": ExtResource("38_jbhv1")
+}, {
+"duration": 0.2,
+"texture": ExtResource("37_aw5jm")
+}, {
+"duration": 0.2,
+"texture": ExtResource("36_3pacs")
+}, {
+"duration": 0.3,
+"texture": ExtResource("40_he0v8")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("39_epm82")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tmofx"]
+animations = [{
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("58_8kpsq")
+}, {
+"duration": 0.3,
+"texture": ExtResource("59_ki2hd")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("57_nre11")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("59_ki2hd")
+}, {
+"duration": 0.3,
+"texture": ExtResource("58_8kpsq")
+}, {
+"duration": 0.3,
+"texture": ExtResource("57_nre11")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("57_nre11")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ux023"]
+animations = [{
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("61_fbwk0")
+}, {
+"duration": 0.3,
+"texture": ExtResource("62_tuejb")
+}, {
+"duration": 0.3,
+"texture": ExtResource("63_7uq8h")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("61_fbwk0")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("63_7uq8h")
+}, {
+"duration": 0.3,
+"texture": ExtResource("62_tuejb")
+}, {
+"duration": 0.3,
+"texture": ExtResource("61_fbwk0")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("61_fbwk0")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1i1hq"]
+animations = [{
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("65_a680e")
+}, {
+"duration": 0.3,
+"texture": ExtResource("66_n1f1n")
+}, {
+"duration": 0.3,
+"texture": ExtResource("67_6pi6h")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("65_a680e")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("67_6pi6h")
+}, {
+"duration": 0.3,
+"texture": ExtResource("66_n1f1n")
+}, {
+"duration": 0.3,
+"texture": ExtResource("65_a680e")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("65_a680e")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_f8ueq"]
+offsets = PackedFloat32Array(0.0289855, 0.253623, 0.521739, 0.862319)
+colors = PackedColorArray(1, 1, 1, 0.027451, 1, 0.666333, 0.09, 0.0235294, 0.63, 0.399, 0, 0, 0.705882, 0.184314, 0.360784, 0.117647)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vvepd"]
+gradient = SubResource("Gradient_f8ueq")
+width = 1024
+height = 640
+fill_from = Vector2(1, 0.05)
+fill_to = Vector2(1.1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rsskb"]
+shader = ExtResource("3_cxx1h")
+shader_parameter/blur_amount = Vector2(0.003, 0.003)
+shader_parameter/focus_size = Vector2(0.23, 0.65)
+shader_parameter/border_radius = 0.165
+shader_parameter/opacity = 1.0
+shader_parameter/focus_x = 0.554
+shader_parameter/focus_y = 0.509
+
+[sub_resource type="Gradient" id="Gradient_5vavj"]
+colors = PackedColorArray(0, 0, 0, 0, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_obbsw"]
+gradient = SubResource("Gradient_5vavj")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0388i"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("93_rxluf")
+}, {
+"duration": 3.0,
+"texture": null
+}],
+"loop": true,
+"name": &"ClickOnScreen",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sekm4"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("93_rxluf")
+}, {
+"duration": 0.2,
+"texture": ExtResource("94_saf0r")
+}, {
+"duration": 0.2,
+"texture": ExtResource("95_qf212")
+}, {
+"duration": 0.2,
+"texture": ExtResource("75_6s2oh")
+}, {
+"duration": 0.2,
+"texture": ExtResource("97_x4e2d")
+}],
+"loop": false,
+"name": &"FadeOut",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y4gml"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("100_wxuen")
+}, {
+"duration": 0.2,
+"texture": ExtResource("101_y5xy0")
+}, {
+"duration": 0.2,
+"texture": ExtResource("102_p4vun")
+}, {
+"duration": 0.2,
+"texture": ExtResource("103_maibs")
+}, {
+"duration": 0.3,
+"texture": ExtResource("104_uj8tg")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("100_wxuen")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("104_uj8tg")
+}, {
+"duration": 0.2,
+"texture": ExtResource("103_maibs")
+}, {
+"duration": 0.2,
+"texture": ExtResource("102_p4vun")
+}, {
+"duration": 0.2,
+"texture": ExtResource("101_y5xy0")
+}, {
+"duration": 0.3,
+"texture": ExtResource("100_wxuen")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("100_wxuen")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3ekj7"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("105_euwqy")
+}, {
+"duration": 0.2,
+"texture": ExtResource("106_x1dtc")
+}, {
+"duration": 0.3,
+"texture": ExtResource("107_3gp6g")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("105_euwqy")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("108_sgb7n")
+}, {
+"duration": 0.2,
+"texture": ExtResource("109_rnuq6")
+}, {
+"duration": 0.3,
+"texture": ExtResource("110_tm73v")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("105_euwqy")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nus4b"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("111_d46jd")
+}, {
+"duration": 0.2,
+"texture": ExtResource("112_7yrbi")
+}, {
+"duration": 0.3,
+"texture": ExtResource("113_aftuy")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("111_d46jd")
+}],
+"loop": true,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("113_aftuy")
+}, {
+"duration": 0.2,
+"texture": ExtResource("112_7yrbi")
+}, {
+"duration": 0.3,
+"texture": ExtResource("111_d46jd")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("111_d46jd")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gmpoc"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("70_kwlo7")
+}, {
+"duration": 0.5,
+"texture": ExtResource("71_j7jbv")
+}, {
+"duration": 0.5,
+"texture": ExtResource("72_8t70e")
+}, {
+"duration": 0.5,
+"texture": ExtResource("73_b6nci")
+}, {
+"duration": 0.5,
+"texture": ExtResource("74_h3rtd")
+}, {
+"duration": 0.5,
+"texture": ExtResource("75_p2nry")
+}, {
+"duration": 0.5,
+"texture": ExtResource("76_l0lib")
+}, {
+"duration": 0.5,
+"texture": ExtResource("77_rfl3k")
+}, {
+"duration": 0.5,
+"texture": ExtResource("78_1amfq")
+}],
+"loop": true,
+"name": &"Title",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rvrig"]
+animations = [{
+"frames": [{
+"duration": 0.4,
+"texture": ExtResource("81_c51si")
+}, {
+"duration": 0.4,
+"texture": ExtResource("82_4et85")
+}, {
+"duration": 0.4,
+"texture": ExtResource("83_qgkrp")
+}, {
+"duration": 0.4,
+"texture": ExtResource("84_rk8yk")
+}, {
+"duration": 0.4,
+"texture": ExtResource("85_ptijx")
+}, {
+"duration": 0.4,
+"texture": ExtResource("86_81rpn")
+}, {
+"duration": 0.2,
+"texture": ExtResource("88_h7y8w")
+}, {
+"duration": 0.2,
+"texture": ExtResource("89_cmcu5")
+}, {
+"duration": 0.2,
+"texture": ExtResource("90_83fyf")
+}, {
+"duration": 0.1,
+"texture": ExtResource("91_a6sdr")
+}, {
+"duration": 0.1,
+"texture": ExtResource("92_qvoy0")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"FadeOut",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y7bco"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("85_yaji4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_t5m0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_wqf6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_l7b7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_j6imj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_kt6um")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_d8tgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_qg6ts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_hulo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_f3gy5")
+}, {
+"duration": 0.5,
+"texture": ExtResource("91_451se")
+}, {
+"duration": 0.5,
+"texture": ExtResource("92_5sosc")
+}, {
+"duration": 0.5,
+"texture": ExtResource("93_bx2kp")
+}, {
+"duration": 0.5,
+"texture": ExtResource("94_t4bww")
+}, {
+"duration": 0.5,
+"texture": ExtResource("95_pqlql")
+}, {
+"duration": 0.5,
+"texture": ExtResource("96_k62i6")
+}, {
+"duration": 0.5,
+"texture": ExtResource("97_c4hky")
+}],
+"loop": false,
+"name": &"2sec",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r1kqk"]
+animations = [{
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("81_a6uxa")
+}, {
+"duration": 2.5,
+"texture": null
+}],
+"loop": true,
+"name": &"Pause",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a6aku"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("117_0l1w6")
+}, {
+"duration": 0.5,
+"texture": ExtResource("118_t700y")
+}, {
+"duration": 0.5,
+"texture": ExtResource("119_dcoth")
+}, {
+"duration": 0.5,
+"texture": ExtResource("120_civ5m")
+}, {
+"duration": 0.5,
+"texture": ExtResource("121_bq42n")
+}, {
+"duration": 0.5,
+"texture": ExtResource("122_5ffrs")
+}, {
+"duration": 0.5,
+"texture": ExtResource("123_bumye")
+}, {
+"duration": 0.5,
+"texture": ExtResource("124_pydkw")
+}, {
+"duration": 0.5,
+"texture": ExtResource("125_wor2j")
+}, {
+"duration": 0.5,
+"texture": ExtResource("126_0r5d0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("127_w142d")
+}, {
+"duration": 0.5,
+"texture": ExtResource("128_nm6ly")
+}, {
+"duration": 0.5,
+"texture": ExtResource("129_fct5f")
+}, {
+"duration": 0.5,
+"texture": ExtResource("130_wwpsi")
+}, {
+"duration": 0.5,
+"texture": ExtResource("131_aimpv")
+}, {
+"duration": 0.5,
+"texture": ExtResource("132_kq8sy")
+}],
+"loop": true,
+"name": &"GameOver",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lbcpo"]
+animations = [{
+"frames": [{
+"duration": 0.4,
+"texture": ExtResource("142_wv0ca")
+}, {
+"duration": 0.4,
+"texture": ExtResource("133_qdrjk")
+}, {
+"duration": 0.35,
+"texture": ExtResource("134_xolaj")
+}, {
+"duration": 0.35,
+"texture": ExtResource("135_b0oy8")
+}, {
+"duration": 0.3,
+"texture": ExtResource("136_c707h")
+}, {
+"duration": 0.3,
+"texture": ExtResource("137_dwkxm")
+}, {
+"duration": 0.25,
+"texture": ExtResource("138_qi33m")
+}, {
+"duration": 0.25,
+"texture": ExtResource("139_gxrep")
+}, {
+"duration": 0.2,
+"texture": ExtResource("140_se1x3")
+}, {
+"duration": 0.2,
+"texture": ExtResource("141_na0jy")
+}, {
+"duration": 2.0,
+"texture": ExtResource("142_wv0ca")
+}],
+"loop": true,
+"name": &"NewRecord",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cgnuf"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("164_q45lc")
+}, {
+"duration": 0.3,
+"texture": ExtResource("165_prfv8")
+}],
+"loop": false,
+"name": &"Click",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("164_q45lc")
+}],
+"loop": false,
+"name": &"Focus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("165_prfv8")
+}, {
+"duration": 0.2,
+"texture": ExtResource("164_q45lc")
+}, {
+"duration": 0.3,
+"texture": ExtResource("163_e2yvi")
+}],
+"loop": false,
+"name": &"Release",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("163_e2yvi")
+}],
+"loop": false,
+"name": &"UnFocus",
+"speed": 5.0
+}]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1by2s"]
+resource_name = "Snake"
+texture = ExtResource("165_vtbvu")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(16, 16)
+0:0/0/z_index = 3
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(16, 16)
+1:0/0/z_index = 3
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(16, 16)
+2:0/0/z_index = 3
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(16, 16)
+3:0/0/z_index = 3
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(16, 16)
+0:1/0/z_index = 3
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(16, 16)
+1:1/0/z_index = 3
+2:1/next_alternative_id = 6
+2:1/0 = 0
+2:1/0/texture_origin = Vector2i(16, 16)
+2:1/0/z_index = 3
+2:1/1 = 1
+2:1/1/flip_h = true
+2:1/1/texture_origin = Vector2i(16, 16)
+2:1/1/z_index = 3
+3:1/next_alternative_id = 3
+3:1/0 = 0
+3:1/0/texture_origin = Vector2i(16, 16)
+3:1/0/z_index = 3
+3:1/1 = 1
+3:1/1/flip_v = true
+3:1/1/texture_origin = Vector2i(16, 16)
+3:1/1/z_index = 3
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(16, 16)
+0:2/0/z_index = 3
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(16, 16)
+1:2/0/z_index = 3
+2:2/0 = 0
+2:2/0/texture_origin = Vector2i(16, 16)
+2:2/0/z_index = 3
+3:2/0 = 0
+3:2/0/texture_origin = Vector2i(16, 16)
+3:2/0/z_index = 3
+
+[sub_resource type="TileSet" id="TileSet_0r11s"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_1by2s")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fv5vo"]
+size = Vector2(30, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i0rcs"]
+size = Vector2(128, 32)
+
+[sub_resource type="Gradient" id="Gradient_4nuji"]
+offsets = PackedFloat32Array(0.384058, 0.5, 1)
+colors = PackedColorArray(1, 1, 1, 0, 0.138898, 0.0242639, 0.167464, 0.666667, 0.584314, 0.352941, 0, 0.0196078)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6x2m4"]
+gradient = SubResource("Gradient_4nuji")
+fill_from = Vector2(0, 0.388889)
+fill_to = Vector2(0, 0.615385)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5qc7c"]
+size = Vector2(128, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dah0h"]
+size = Vector2(32, 32)
+
+[node name="Main" type="Node"]
+script = ExtResource("1_1awhp")
+
+[node name="Background" type="Sprite2D" parent="."]
+use_parent_material = true
+position = Vector2(639.75, 320)
+scale = Vector2(0.500244, 0.5)
+texture = ExtResource("79_uuyas")
+metadata/_edit_lock_ = true
+
+[node name="UI_SideMenu" type="CanvasLayer" parent="."]
+
+[node name="SideMenu" type="Control" parent="UI_SideMenu"]
+layout_mode = 3
+anchor_right = 0.111
+anchor_bottom = 1.0
+offset_right = 0.127983
+size_flags_horizontal = 4
+script = ExtResource("4_kcolg")
+metadata/_edit_lock_ = true
+
+[node name="BackgroundSideMenu" type="TextureRect" parent="UI_SideMenu/SideMenu"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.52588e-05
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_aine0")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_lock_ = true
+
+[node name="ShaderSideMenu" type="TextureRect" parent="UI_SideMenu/SideMenu/BackgroundSideMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = 5.0
+texture = SubResource("GradientTexture2D_t2vwk")
+metadata/_edit_lock_ = true
+
+[node name="SideButtons" type="GridContainer" parent="UI_SideMenu/SideMenu"]
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 33.0
+offset_top = 98.0
+offset_right = -31.0
+offset_bottom = -446.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 2
+metadata/_edit_lock_ = true
+
+[node name="MarginRestart" type="MarginContainer" parent="UI_SideMenu/SideMenu/SideButtons"]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="RestartButton" type="Button" parent="UI_SideMenu/SideMenu/SideButtons/MarginRestart"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+focus_mode = 0
+theme_override_constants/outline_size = 1
+script = ExtResource("5_qdywj")
+
+[node name="RestartAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton"]
+position = Vector2(14, 14)
+scale = Vector2(0.53125, 0.53125)
+sprite_frames = SubResource("SpriteFrames_lcsv8")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("11_5juvp")
+
+[node name="MarginRestartConfirm" type="MarginContainer" parent="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.071
+anchor_top = -0.643
+anchor_right = 0.5
+anchor_bottom = -0.071
+offset_left = -0.012
+offset_top = 0.00399971
+offset_bottom = -0.012
+mouse_filter = 2
+theme_override_constants/margin_left = 1
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 1
+theme_override_constants/margin_bottom = 1
+
+[node name="ConfirmRestart" type="Button" parent="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+script = ExtResource("6_u71ul")
+
+[node name="ConfirmAnimationRestart" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart"]
+position = Vector2(7, 7)
+scale = Vector2(0.5625, 0.5625)
+sprite_frames = SubResource("SpriteFrames_t68cr")
+animation = &"Click"
+autoplay = "UnFocus"
+script = ExtResource("19_t7so3")
+
+[node name="MarginRecuseRestart" type="MarginContainer" parent="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.643
+anchor_right = 1.071
+anchor_bottom = -0.071
+offset_top = 0.00399971
+offset_right = -0.987999
+offset_bottom = -0.012
+mouse_filter = 2
+theme_override_constants/margin_left = 1
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 1
+
+[node name="RecuseRestart" type="Button" parent="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+script = ExtResource("7_ypm67")
+
+[node name="RecuseAnimationRestart" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart"]
+position = Vector2(7, 7)
+scale = Vector2(0.5625, 0.5625)
+sprite_frames = SubResource("SpriteFrames_gwg7a")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("25_dtdhc")
+
+[node name="MarginPause" type="MarginContainer" parent="UI_SideMenu/SideMenu/SideButtons"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="PauseButton" type="Button" parent="UI_SideMenu/SideMenu/SideButtons/MarginPause"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+size_flags_horizontal = 0
+focus_mode = 0
+script = ExtResource("8_hfmo7")
+
+[node name="PauseAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton"]
+position = Vector2(14, 14)
+scale = Vector2(0.541667, 0.541667)
+sprite_frames = SubResource("SpriteFrames_youy2")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("16_3jffc")
+
+[node name="MarginQuit" type="MarginContainer" parent="UI_SideMenu/SideMenu/SideButtons"]
+custom_minimum_size = Vector2(29, 28)
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="QuitButton" type="Button" parent="UI_SideMenu/SideMenu/SideButtons/MarginQuit"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+focus_mode = 0
+theme_override_constants/outline_size = 1
+script = ExtResource("9_opp8t")
+
+[node name="QuitAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton"]
+position = Vector2(14, 14)
+scale = Vector2(0.541667, 0.541667)
+sprite_frames = SubResource("SpriteFrames_asouk")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("26_56diy")
+
+[node name="MarginContainer" type="MarginContainer" parent="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton"]
+layout_mode = 2
+anchor_left = -0.071
+anchor_top = 1.071
+anchor_right = 0.5
+anchor_bottom = 1.643
+offset_left = -0.012
+offset_top = 0.0119972
+offset_bottom = -0.00400543
+mouse_filter = 2
+theme_override_constants/margin_left = 1
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 1
+theme_override_constants/margin_bottom = 1
+
+[node name="ConfirmQuit" type="Button" parent="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(14, 14)
+layout_mode = 2
+focus_mode = 0
+script = ExtResource("10_d3b3e")
+
+[node name="ConfirmAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit"]
+position = Vector2(7, 6.99999)
+scale = Vector2(0.5625, 0.5625)
+sprite_frames = SubResource("SpriteFrames_ys7pk")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("38_kkc54")
+
+[node name="MarginContainer2" type="MarginContainer" parent="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.071
+anchor_right = 1.071
+anchor_bottom = 1.643
+offset_top = 0.0119972
+offset_right = 0.0119972
+offset_bottom = -0.00400543
+mouse_filter = 2
+theme_override_constants/margin_left = 1
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 1
+theme_override_constants/margin_bottom = 1
+
+[node name="RecuseQuit" type="Button" parent="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(14, 14)
+layout_mode = 2
+focus_mode = 0
+script = ExtResource("11_2hr8j")
+
+[node name="RecuseAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit"]
+position = Vector2(7, 7)
+scale = Vector2(0.5625, 0.5625)
+sprite_frames = SubResource("SpriteFrames_m18ev")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("41_ne3fn")
+
+[node name="MarginVolume" type="MarginContainer" parent="UI_SideMenu/SideMenu/SideButtons"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="VolumeButton" type="Button" parent="UI_SideMenu/SideMenu/SideButtons/MarginVolume"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+focus_mode = 0
+theme_override_constants/outline_size = 1
+script = ExtResource("12_8eso0")
+
+[node name="VolumeAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton"]
+position = Vector2(14, 14)
+scale = Vector2(0.526042, 0.526042)
+sprite_frames = SubResource("SpriteFrames_y5ec0")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("47_cvhnq")
+
+[node name="VSlider" type="VSlider" parent="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.214
+anchor_top = -0.143
+anchor_right = 1.786
+anchor_bottom = 1.0
+offset_left = 0.00799561
+offset_top = 0.00400019
+offset_right = -0.00800323
+focus_mode = 1
+theme_override_icons/grabber = ExtResource("41_u3yc3")
+value = 100.0
+
+[node name="Time" type="Label" parent="UI_SideMenu/SideMenu"]
+visible = false
+texture_filter = 5
+texture_repeat = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.313
+anchor_top = 0.355
+anchor_right = 0.727
+anchor_bottom = 0.408
+offset_left = -5.064
+offset_top = -0.199997
+offset_right = 0.944008
+offset_bottom = -0.119995
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.313726)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 26
+text = "00:00.0"
+vertical_alignment = 1
+script = ExtResource("57_2hf27")
+
+[node name="Score" type="Label" parent="UI_SideMenu/SideMenu"]
+visible = false
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.313
+anchor_top = 0.459
+anchor_right = 0.727
+anchor_bottom = 0.502
+offset_left = -2.064
+offset_top = 0.23999
+offset_right = -0.0559998
+offset_bottom = -0.280029
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 26
+text = "99999"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+script = ExtResource("58_h6osu")
+
+[node name="ScoreTable" type="Control" parent="UI_SideMenu/SideMenu"]
+layout_mode = 1
+anchor_left = 0.008
+anchor_top = 0.633
+anchor_right = 0.103
+anchor_bottom = 0.819
+offset_left = -1.024
+offset_top = -405.12
+offset_right = -13.184
+offset_bottom = -524.16
+
+[node name="Top1" type="RichTextLabel" parent="UI_SideMenu/SideMenu/ScoreTable"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 405.0
+offset_right = 119.0
+offset_bottom = 429.0
+metadata/_edit_group_ = true
+
+[node name="Name" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top1"]
+layout_mode = 2
+anchor_left = 0.049
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = -1.39
+offset_top = 0.0079999
+offset_right = -64.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "Marco"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top1"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 48.04
+offset_top = 0.0079999
+offset_right = -34.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top1"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 77.04
+offset_top = 0.0079999
+offset_right = 0.979996
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "00:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Top2" type="RichTextLabel" parent="UI_SideMenu/SideMenu/ScoreTable"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 429.0
+offset_right = 119.0
+offset_bottom = 453.0
+metadata/_edit_group_ = true
+
+[node name="Name" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top2"]
+layout_mode = 2
+anchor_left = 0.049
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = -1.39
+offset_top = 0.0079999
+offset_right = -64.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "Marco"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top2"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 48.04
+offset_top = 0.0079999
+offset_right = -34.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top2"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 77.04
+offset_top = 0.0079999
+offset_right = 0.979996
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "00:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Top3" type="RichTextLabel" parent="UI_SideMenu/SideMenu/ScoreTable"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 453.0
+offset_right = 119.0
+offset_bottom = 477.0
+metadata/_edit_group_ = true
+
+[node name="Name" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top3"]
+layout_mode = 2
+anchor_left = 0.049
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = -1.39
+offset_top = 0.0079999
+offset_right = -64.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "Marco"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top3"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 48.04
+offset_top = 0.0079999
+offset_right = -34.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top3"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 77.04
+offset_top = 0.0079999
+offset_right = 0.979996
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "00:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Top4" type="RichTextLabel" parent="UI_SideMenu/SideMenu/ScoreTable"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 477.0
+offset_right = 119.0
+offset_bottom = 501.0
+metadata/_edit_group_ = true
+
+[node name="Name" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top4"]
+layout_mode = 2
+anchor_left = 0.049
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = -1.39
+offset_top = 0.0079999
+offset_right = -64.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "Marco"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top4"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 48.04
+offset_top = 0.0079999
+offset_right = -34.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top4"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 77.04
+offset_top = 0.0079999
+offset_right = 0.979996
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "00:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Top5" type="RichTextLabel" parent="UI_SideMenu/SideMenu/ScoreTable"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 501.0
+offset_right = 119.0
+offset_bottom = 525.0
+metadata/_edit_group_ = true
+
+[node name="Name" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top5"]
+layout_mode = 2
+anchor_left = 0.049
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = -1.39
+offset_top = 0.0079999
+offset_right = -64.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "Marco"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top5"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 48.04
+offset_top = 0.0079999
+offset_right = -34.02
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time" type="Label" parent="UI_SideMenu/SideMenu/ScoreTable/Top5"]
+layout_mode = 2
+anchor_left = 0.036
+anchor_top = 0.208
+anchor_right = 0.982
+anchor_bottom = 0.958
+offset_left = 77.04
+offset_top = 0.0079999
+offset_right = 0.979996
+offset_bottom = 0.00799942
+theme_override_colors/font_color = Color(1, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 15
+text = "00:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI_SideMenu/SideMenu"]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 578.0
+offset_right = 119.0
+offset_bottom = 606.0
+theme_override_constants/separation = 0
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Margin1" type="MarginContainer" parent="UI_SideMenu/SideMenu/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="FullscreenButton" type="Button" parent="UI_SideMenu/SideMenu/HBoxContainer/Margin1"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(34, 0)
+layout_mode = 2
+focus_mode = 0
+
+[node name="FullscreenAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton"]
+position = Vector2(54.875, 14)
+scale = Vector2(0.503319, 0.502212)
+sprite_frames = SubResource("SpriteFrames_tmofx")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("60_h68ao")
+
+[node name="Margin2" type="MarginContainer" parent="UI_SideMenu/SideMenu/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 0
+
+[node name="BorderlessButton" type="Button" parent="UI_SideMenu/SideMenu/HBoxContainer/Margin2"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(37, 0)
+layout_mode = 2
+focus_mode = 0
+
+[node name="BorderlessAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton"]
+position = Vector2(18.5, 14)
+scale = Vector2(0.504266, 0.5)
+sprite_frames = SubResource("SpriteFrames_ux023")
+animation = &"Click"
+autoplay = "UnFocus"
+script = ExtResource("64_f68mf")
+
+[node name="Margin3" type="MarginContainer" parent="UI_SideMenu/SideMenu/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = -1
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="WindowedButton" type="Button" parent="UI_SideMenu/SideMenu/HBoxContainer/Margin3"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(34, 0)
+layout_mode = 2
+focus_mode = 0
+
+[node name="WindowedAnimation" type="AnimatedSprite2D" parent="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton"]
+position = Vector2(-20.826, 14)
+scale = Vector2(0.502885, 0.506)
+sprite_frames = SubResource("SpriteFrames_1i1hq")
+animation = &"Click"
+autoplay = "UnFocus"
+script = ExtResource("68_njfo4")
+
+[node name="UI_Manager" type="Node" parent="."]
+script = ExtResource("14_r8d74")
+
+[node name="IluminationFilter" type="TextureRect" parent="UI_Manager"]
+z_index = 1
+anchors_preset = -1
+anchor_left = 0.111
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.127998
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_vvepd")
+metadata/_edit_lock_ = true
+
+[node name="Blur" type="CanvasLayer" parent="UI_Manager"]
+
+[node name="TextureRect" type="TextureRect" parent="UI_Manager/Blur"]
+visible = false
+light_mask = 4
+visibility_layer = 4
+z_index = 3
+material = SubResource("ShaderMaterial_rsskb")
+anchors_preset = -1
+anchor_left = 0.111
+anchor_top = 0.012
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.127998
+offset_top = -7.68
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_obbsw")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="CreditsLabel" type="Label" parent="UI_Manager"]
+visible = false
+light_mask = 8
+visibility_layer = 8
+z_index = 4
+anchors_preset = -1
+anchor_left = 0.444
+anchor_top = 0.3
+anchor_right = 0.667
+anchor_bottom = 0.762
+offset_left = 0.511963
+offset_right = -0.384033
+offset_bottom = 0.319977
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(1, 0.635294, 0, 0.313726)
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 26
+text = "Credits
+GameDeveloper
+OGrandeSoldador
+ArtDeveloper
+Fani
+
+Agradecimento especiais
+Graças a Deus
+e os amigos"
+horizontal_alignment = 1
+
+[node name="SplashScreen" type="Control" parent="UI_Manager"]
+light_mask = 8
+visibility_layer = 8
+z_index = 4
+layout_mode = 3
+anchor_left = 0.111
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.127991
+offset_right = 1.0
+mouse_filter = 2
+script = ExtResource("71_7d86t")
+metadata/_edit_lock_ = true
+
+[node name="ClickOnScreen" type="Button" parent="UI_Manager/SplashScreen"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+
+[node name="ClickOnScrenAnimation" type="AnimatedSprite2D" parent="UI_Manager/SplashScreen"]
+position = Vector2(512, 320)
+scale = Vector2(1.03571, 1)
+sprite_frames = SubResource("SpriteFrames_0388i")
+animation = &"ClickOnScreen"
+autoplay = "ClickOnScreen"
+frame_progress = 0.574579
+
+[node name="Fadeout" type="AnimatedSprite2D" parent="UI_Manager/SplashScreen"]
+visible = false
+z_index = 11
+position = Vector2(512, 320)
+scale = Vector2(1.03571, 1)
+sprite_frames = SubResource("SpriteFrames_sekm4")
+animation = &"FadeOut"
+
+[node name="MenuScreen" type="Control" parent="UI_Manager"]
+visible = false
+z_index = 10
+layout_mode = 3
+anchor_left = 0.111
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.127998
+script = ExtResource("98_pisna")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="UI_Manager/MenuScreen"]
+position = Vector2(512, 320)
+scale = Vector2(0.84375, 0.84375)
+texture = ExtResource("99_oioso")
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Start" type="Button" parent="UI_Manager/MenuScreen/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.678
+anchor_top = 0.519
+anchor_right = 0.821
+anchor_bottom = 0.733
+offset_left = -192.352
+offset_top = -128.864
+offset_right = -191.264
+offset_bottom = -127.648
+focus_mode = 0
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="MenuStartAnimation" type="AnimatedSprite2D" parent="UI_Manager/MenuScreen/Sprite2D/Start"]
+position = Vector2(28, 28)
+scale = Vector2(0.999999, 1)
+sprite_frames = SubResource("SpriteFrames_y4gml")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("107_e1yid")
+
+[node name="preview" type="Button" parent="UI_Manager/MenuScreen/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -116.148
+offset_top = 69.0
+offset_right = -94.148
+offset_bottom = 91.0
+focus_mode = 0
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="PreviewStartAnimation" type="AnimatedSprite2D" parent="UI_Manager/MenuScreen/Sprite2D/preview"]
+position = Vector2(11, 11)
+scale = Vector2(1, 1.02)
+sprite_frames = SubResource("SpriteFrames_3ekj7")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("113_xetum")
+
+[node name="next" type="Button" parent="UI_Manager/MenuScreen/Sprite2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -34.37
+offset_top = 69.0
+offset_right = -12.37
+offset_bottom = 91.0
+focus_mode = 0
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="NextStartAnimation" type="AnimatedSprite2D" parent="UI_Manager/MenuScreen/Sprite2D/next"]
+position = Vector2(11, 11)
+sprite_frames = SubResource("SpriteFrames_nus4b")
+animation = &"UnFocus"
+autoplay = "UnFocus"
+script = ExtResource("116_nj2uh")
+
+[node name="GameName" type="TextureRect" parent="UI_Manager/MenuScreen"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.1
+anchor_right = 0.75
+anchor_bottom = 0.3
+mouse_filter = 2
+
+[node name="SnakeGame" type="AnimatedSprite2D" parent="UI_Manager/MenuScreen/GameName"]
+z_index = 7
+position = Vector2(256, 44)
+scale = Vector2(0.25, 0.261)
+sprite_frames = SubResource("SpriteFrames_gmpoc")
+animation = &"Title"
+autoplay = "Title"
+frame = 8
+frame_progress = 1.0
+
+[node name="FadeOut" type="AnimatedSprite2D" parent="UI_Manager/MenuScreen/GameName"]
+visible = false
+position = Vector2(256, -4.1155)
+scale = Vector2(0.25, 0.265562)
+sprite_frames = SubResource("SpriteFrames_rvrig")
+animation = &"FadeOut"
+
+[node name="PauseScreen" type="Control" parent="UI_Manager"]
+visible = false
+z_index = 7
+layout_mode = 3
+anchor_left = 0.111
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.127998
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="2sec" type="AnimatedSprite2D" parent="UI_Manager/PauseScreen"]
+z_index = 7
+position = Vector2(512, 320)
+scale = Vector2(1, 0.796)
+sprite_frames = SubResource("SpriteFrames_y7bco")
+animation = &"2sec"
+
+[node name="Pause" type="AnimatedSprite2D" parent="UI_Manager/PauseScreen"]
+visible = false
+z_index = 7
+position = Vector2(512, 320)
+scale = Vector2(0.35, 0.35)
+sprite_frames = SubResource("SpriteFrames_r1kqk")
+animation = &"Pause"
+autoplay = "Pause"
+
+[node name="GameOverScreen" type="Control" parent="UI_Manager"]
+visible = false
+z_index = 10
+layout_mode = 3
+anchor_left = 0.111
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.127991
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("135_ptrun")
+metadata/_edit_lock_ = true
+
+[node name="GameOverAnimation" type="AnimatedSprite2D" parent="UI_Manager/GameOverScreen"]
+z_index = 11
+position = Vector2(514, 112)
+scale = Vector2(0.3, 0.296)
+sprite_frames = SubResource("SpriteFrames_a6aku")
+animation = &"GameOver"
+autoplay = "GameOver"
+
+[node name="NewRecordAnimation" type="AnimatedSprite2D" parent="UI_Manager/GameOverScreen"]
+visible = false
+z_index = 10
+position = Vector2(512, 409)
+scale = Vector2(0.8, 0.781)
+sprite_frames = SubResource("SpriteFrames_lbcpo")
+animation = &"NewRecord"
+autoplay = "NewRecord"
+metadata/_edit_lock_ = true
+
+[node name="FinalScoreTable" type="Sprite2D" parent="UI_Manager/GameOverScreen"]
+z_index = 10
+position = Vector2(511.65, 320)
+scale = Vector2(0.846373, 0.84375)
+texture = ExtResource("162_3c02t")
+metadata/_edit_lock_ = true
+
+[node name="RestartGameOverButton" type="AnimatedSprite2D" parent="UI_Manager/GameOverScreen/FinalScoreTable"]
+z_index = 10
+position = Vector2(0.413535, 66.3704)
+scale = Vector2(1.03382, 1.0535)
+sprite_frames = SubResource("SpriteFrames_cgnuf")
+animation = &"Click"
+autoplay = "UnFocus"
+script = ExtResource("166_5h7cp")
+
+[node name="Restart" type="Button" parent="UI_Manager/GameOverScreen/FinalScoreTable"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.329
+anchor_top = 0.648
+anchor_right = 0.674
+anchor_bottom = 0.871
+offset_left = -192.994
+offset_top = -127.888
+offset_right = -193.164
+offset_bottom = -127.976
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+focus_mode = 0
+
+[node name="Score" type="Label" parent="UI_Manager/GameOverScreen/FinalScoreTable"]
+anchors_preset = -1
+anchor_left = 0.119
+anchor_top = 0.332
+anchor_right = 0.389
+anchor_bottom = 0.492
+offset_left = -192.934
+offset_top = -127.992
+offset_right = -193.154
+offset_bottom = -127.952
+theme_override_colors/font_shadow_color = Color(0.580392, 0.352941, 0.501961, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 38
+text = "99999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time" type="Label" parent="UI_Manager/GameOverScreen/FinalScoreTable"]
+anchors_preset = -1
+anchor_left = 0.617
+anchor_top = 0.332
+anchor_right = 0.886
+anchor_bottom = 0.5
+offset_left = -193.162
+offset_top = -127.992
+offset_right = -192.996
+offset_bottom = -130.0
+theme_override_colors/font_shadow_color = Color(0.580392, 0.352941, 0.501961, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = ExtResource("14_laa0b")
+theme_override_font_sizes/font_size = 38
+text = "00:00:0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Name" type="Sprite2D" parent="UI_Manager/GameOverScreen"]
+visible = false
+z_index = 10
+position = Vector2(512, 338)
+scale = Vector2(0.9, 0.843)
+texture = ExtResource("144_itvqy")
+metadata/_edit_lock_ = true
+
+[node name="SnakeTiles" type="TileMapLayer" parent="."]
+z_index = 5
+position = Vector2(144, 16)
+tile_set = SubResource("TileSet_0r11s")
+script = ExtResource("166_gavnp")
+
+[node name="Gameplay" type="Node2D" parent="."]
+position = Vector2(144, 16)
+script = ExtResource("164_vvqjh")
+
+[node name="SnakeCore" type="CharacterBody2D" parent="Gameplay"]
+collision_layer = 2
+collision_mask = 12
+script = ExtResource("165_qus2p")
+
+[node name="Head_Coll" type="CollisionShape2D" parent="Gameplay/SnakeCore"]
+z_index = 6
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_fv5vo")
+
+[node name="Head_Coll_P2" type="CollisionShape2D" parent="Gameplay/SnakeCore"]
+z_index = 6
+position = Vector2(32, -32)
+shape = SubResource("RectangleShape2D_fv5vo")
+
+[node name="HeadSprite" type="Sprite2D" parent="Gameplay/SnakeCore"]
+z_index = 4
+position = Vector2(-64, -32)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("166_bsgdc")
+
+[node name="HeadSprite_P2" type="Sprite2D" parent="Gameplay/SnakeCore"]
+z_index = 4
+position = Vector2(-96, -32)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("174_jphq8")
+
+[node name="Body" type="Node2D" parent="Gameplay/SnakeCore"]
+script = ExtResource("167_y8cqw")
+
+[node name="Effects" type="Node2D" parent="Gameplay/SnakeCore/Body"]
+script = ExtResource("168_l1kw6")
+metadata/_edit_lock_ = true
+
+[node name="BodySprite" type="Sprite2D" parent="Gameplay/SnakeCore/Body"]
+z_index = 3
+position = Vector2(-32, -32)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("169_n1eil")
+
+[node name="BodySprite2" type="Sprite2D" parent="Gameplay/SnakeCore/Body"]
+z_index = 3
+position = Vector2(-128, -32)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("178_jerig")
+
+[node name="Mapa_1" type="Area2D" parent="Gameplay"]
+position = Vector2(-16, -16)
+script = ExtResource("170_qpl1d")
+
+[node name="Wall_1" type="CollisionShape2D" parent="Gameplay/Mapa_1"]
+visible = false
+position = Vector2(256, 80)
+shape = SubResource("RectangleShape2D_i0rcs")
+
+[node name="Wall1_Shadow" type="TextureRect" parent="Gameplay/Mapa_1/Wall_1"]
+self_modulate = Color(1, 1, 1, 0.486275)
+z_index = 10
+anchors_preset = -1
+anchor_left = 0.187
+anchor_top = 0.1
+anchor_right = 0.187
+anchor_bottom = 0.1
+offset_left = -64.0
+offset_top = -16.0
+offset_right = 64.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_6x2m4")
+
+[node name="Sprite1" type="Sprite2D" parent="Gameplay/Mapa_1/Wall_1"]
+position = Vector2(32, 1.66893e-06)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("171_cyt7p")
+
+[node name="Sprite3" type="Sprite2D" parent="Gameplay/Mapa_1/Wall_1"]
+position = Vector2(-32, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("172_ccjeg")
+
+[node name="Wall_2" type="CollisionShape2D" parent="Gameplay/Mapa_1"]
+visible = false
+position = Vector2(704, 528)
+shape = SubResource("RectangleShape2D_5qc7c")
+
+[node name="Wall2_Shadow" type="TextureRect" parent="Gameplay/Mapa_1/Wall_2"]
+self_modulate = Color(1, 1, 1, 0.486275)
+z_index = 10
+offset_left = -64.0
+offset_top = -16.0
+offset_right = 64.0
+offset_bottom = 48.0
+texture = SubResource("GradientTexture2D_6x2m4")
+
+[node name="Sprite2" type="Sprite2D" parent="Gameplay/Mapa_1/Wall_2"]
+position = Vector2(-32.0001, -6.10352e-05)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("173_isec5")
+
+[node name="Sprite4" type="Sprite2D" parent="Gameplay/Mapa_1/Wall_2"]
+position = Vector2(32, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("174_cxsew")
+
+[node name="Items" type="Area2D" parent="Gameplay"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("175_yv7lc")
+metadata/_edit_lock_ = true
+
+[node name="Apple_Coll" type="CollisionShape2D" parent="Gameplay/Items"]
+z_index = 3
+position = Vector2(96, -32)
+shape = SubResource("RectangleShape2D_dah0h")
+
+[node name="Apple_Sprite" type="Sprite2D" parent="Gameplay/Items"]
+z_index = 4
+position = Vector2(64, -32)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("176_gq1qh")
+
+[node name="TimeToCollect" type="Timer" parent="Gameplay/Items"]
+
+[node name="TransitionPause" type="Timer" parent="Gameplay"]
+wait_time = 2.0
+one_shot = true
+
+[node name="GameTime" type="Timer" parent="Gameplay"]
+wait_time = 0.1
+
+[node name="Player1_Timer" type="Node" parent="Gameplay"]
+
+[node name="GameVelocity" type="Timer" parent="Gameplay/Player1_Timer"]
+
+[node name="Dash_Coodown" type="Timer" parent="Gameplay/Player1_Timer"]
+wait_time = 2.0
+one_shot = true
+
+[node name="Dash_duration" type="Timer" parent="Gameplay/Player1_Timer"]
+wait_time = 0.2
+
+[node name="Dig_Cooldown" type="Timer" parent="Gameplay/Player1_Timer"]
+wait_time = 3.0
+one_shot = true
+
+[node name="Dig_Duration" type="Timer" parent="Gameplay/Player1_Timer"]
+wait_time = 0.2
+one_shot = true
+
+[node name="Player2_Timer" type="Node" parent="Gameplay"]
+
+[node name="GameVelocity" type="Timer" parent="Gameplay/Player2_Timer"]
+
+[node name="Dash_Coodown_P2" type="Timer" parent="Gameplay/Player2_Timer"]
+wait_time = 2.0
+
+[node name="Dash_duration_P2" type="Timer" parent="Gameplay/Player2_Timer"]
+wait_time = 0.2
+
+[node name="Dig_CoolDown_P2" type="Timer" parent="Gameplay/Player2_Timer"]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="button_down" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/RestartAnimation" method="_on_restart_button_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/RestartAnimation" method="_on_restart_button_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/RestartAnimation" method="_on_restart_button_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/RestartAnimation" method="_on_restart_button_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton" to="UI_SideMenu/SideMenu" method="_on_restart_button_pressed"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton" method="_on_pressed_restart_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart/ConfirmAnimationRestart" method="_on_confirm_restart_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart/ConfirmAnimationRestart" method="_on_confirm_restart_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart/ConfirmAnimationRestart" method="_on_confirm_restart_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart/ConfirmAnimationRestart" method="_on_confirm_restart_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart" to="." method="_on_confirm_restart_pressed"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRestartConfirm/ConfirmRestart" method="_on_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart/RecuseAnimationRestart" method="_on_recuse_restart_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart/RecuseAnimationRestart" method="_on_recuse_restart_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart/RecuseAnimationRestart" method="_on_recuse_restart_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart/RecuseAnimationRestart" method="_on_recuse_restart_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart" to="UI_SideMenu/SideMenu/SideButtons/MarginRestart/RestartButton/MarginRecuseRestart/RecuseRestart" method="_on_recuse_restart_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton" to="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton/PauseAnimation" method="_on_pause_button_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton" to="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton/PauseAnimation" method="_on_pause_button_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton" to="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton/PauseAnimation" method="_on_pause_button_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton" to="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton/PauseAnimation" method="_on_pause_button_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton" to="UI_SideMenu/SideMenu" method="_on_pause_button_pressed"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginPause/PauseButton" to="Gameplay" method="_on_pause_button_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/QuitAnimation" method="_on_quit_button_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/QuitAnimation" method="_on_quit_button_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/QuitAnimation" method="_on_quit_button_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/QuitAnimation" method="_on_quit_button_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton" to="UI_SideMenu/SideMenu" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton" method="_on_quit_button_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit/ConfirmAnimation" method="_on_confirm_quit_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit/ConfirmAnimation" method="_on_confirm_quit_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit/ConfirmAnimation" method="_on_confirm_quit_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit/ConfirmAnimation" method="_on_confirm_quit_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer/ConfirmQuit" method="_on_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit/RecuseAnimation" method="_on_recuse_quit_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit/RecuseAnimation" method="_on_recuse_quit_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit/RecuseAnimation" method="_on_recuse_quit_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit/RecuseAnimation" method="_on_recuse_quit_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit" to="UI_SideMenu/SideMenu/SideButtons/MarginQuit/QuitButton/MarginContainer2/RecuseQuit" method="_on_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton" to="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton/VolumeAnimation" method="_on_volume_button_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton" to="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton/VolumeAnimation" method="_on_volume_button_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton" to="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton/VolumeAnimation" method="_on_volume_button_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton" to="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton/VolumeAnimation" method="_on_volume_button_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton" to="UI_SideMenu/SideMenu" method="_on_volume_button_pressed"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton" to="UI_SideMenu/SideMenu/SideButtons/MarginVolume/VolumeButton" method="_on_volume_button_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton/FullscreenAnimation" method="_on_fullscreen_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton/FullscreenAnimation" method="_on_fullscreen_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton/FullscreenAnimation" method="_on_fullscreen_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton/FullscreenAnimation" method="_on_fullscreen_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/HBoxContainer/Margin1/FullscreenButton" to="." method="_on_fullscreen_button_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton/BorderlessAnimation" method="_on_borderless_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton/BorderlessAnimation" method="_on_borderless_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton/BorderlessAnimation" method="_on_borderless_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton/BorderlessAnimation" method="_on_borderless_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/HBoxContainer/Margin2/BorderlessButton" to="." method="_on_borderless_button_pressed"]
+[connection signal="button_down" from="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton/WindowedAnimation" method="_on_windowed_button_down"]
+[connection signal="button_up" from="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton/WindowedAnimation" method="_on_windowed_button_up"]
+[connection signal="mouse_entered" from="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton/WindowedAnimation" method="_on_windowed_mouse_entered"]
+[connection signal="mouse_exited" from="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton" to="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton/WindowedAnimation" method="_on_windowed_mouse_exited"]
+[connection signal="pressed" from="UI_SideMenu/SideMenu/HBoxContainer/Margin3/WindowedButton" to="." method="_on_windowed_button_pressed"]
+[connection signal="pressed" from="UI_Manager/SplashScreen/ClickOnScreen" to="UI_Manager" method="_click_on_splash_screen_pressed"]
+[connection signal="button_down" from="UI_Manager/MenuScreen/Sprite2D/Start" to="UI_Manager/MenuScreen/Sprite2D/Start/MenuStartAnimation" method="_on_start_button_down"]
+[connection signal="button_up" from="UI_Manager/MenuScreen/Sprite2D/Start" to="UI_Manager/MenuScreen/Sprite2D/Start/MenuStartAnimation" method="_on_start_button_up"]
+[connection signal="mouse_entered" from="UI_Manager/MenuScreen/Sprite2D/Start" to="UI_Manager/MenuScreen/Sprite2D/Start/MenuStartAnimation" method="_on_start_mouse_entered"]
+[connection signal="mouse_exited" from="UI_Manager/MenuScreen/Sprite2D/Start" to="UI_Manager/MenuScreen/Sprite2D/Start/MenuStartAnimation" method="_on_start_mouse_exited"]
+[connection signal="pressed" from="UI_Manager/MenuScreen/Sprite2D/Start" to="UI_Manager/MenuScreen" method="_on_start_pressed"]
+[connection signal="button_down" from="UI_Manager/MenuScreen/Sprite2D/preview" to="UI_Manager/MenuScreen/Sprite2D/preview/PreviewStartAnimation" method="_on_preview_button_down"]
+[connection signal="button_up" from="UI_Manager/MenuScreen/Sprite2D/preview" to="UI_Manager/MenuScreen/Sprite2D/preview/PreviewStartAnimation" method="_on_preview_button_up"]
+[connection signal="mouse_entered" from="UI_Manager/MenuScreen/Sprite2D/preview" to="UI_Manager/MenuScreen/Sprite2D/preview/PreviewStartAnimation" method="_on_preview_mouse_entered"]
+[connection signal="mouse_exited" from="UI_Manager/MenuScreen/Sprite2D/preview" to="UI_Manager/MenuScreen/Sprite2D/preview/PreviewStartAnimation" method="_on_preview_mouse_exited"]
+[connection signal="button_down" from="UI_Manager/MenuScreen/Sprite2D/next" to="UI_Manager/MenuScreen/Sprite2D/next/NextStartAnimation" method="_on_next_button_down"]
+[connection signal="button_up" from="UI_Manager/MenuScreen/Sprite2D/next" to="UI_Manager/MenuScreen/Sprite2D/next/NextStartAnimation" method="_on_next_button_up"]
+[connection signal="mouse_entered" from="UI_Manager/MenuScreen/Sprite2D/next" to="UI_Manager/MenuScreen/Sprite2D/next/NextStartAnimation" method="_on_next_mouse_entered"]
+[connection signal="mouse_exited" from="UI_Manager/MenuScreen/Sprite2D/next" to="UI_Manager/MenuScreen/Sprite2D/next/NextStartAnimation" method="_on_next_mouse_exited"]
+[connection signal="animation_finished" from="UI_Manager/PauseScreen/2sec" to="UI_Manager" method="_on_sec_animation_finished"]
+[connection signal="animation_finished" from="UI_Manager/PauseScreen/2sec" to="Gameplay" method="_on_sec_start_animation_finished"]
+[connection signal="button_down" from="UI_Manager/GameOverScreen/FinalScoreTable/Restart" to="UI_Manager/GameOverScreen/FinalScoreTable/RestartGameOverButton" method="_on_restart_button_down"]
+[connection signal="button_up" from="UI_Manager/GameOverScreen/FinalScoreTable/Restart" to="UI_Manager/GameOverScreen/FinalScoreTable/RestartGameOverButton" method="_on_restart_button_up"]
+[connection signal="mouse_entered" from="UI_Manager/GameOverScreen/FinalScoreTable/Restart" to="UI_Manager/GameOverScreen/FinalScoreTable/RestartGameOverButton" method="_on_restart_mouse_entered"]
+[connection signal="mouse_exited" from="UI_Manager/GameOverScreen/FinalScoreTable/Restart" to="UI_Manager/GameOverScreen/FinalScoreTable/RestartGameOverButton" method="_on_restart_mouse_exited"]
+[connection signal="pressed" from="UI_Manager/GameOverScreen/FinalScoreTable/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pause" from="Gameplay" to="UI_Manager" method="_on_gameplay_pause"]
+[connection signal="game_over" from="Gameplay/SnakeCore" to="Gameplay" method="_on_snake_core_game_over"]
+[connection signal="game_over" from="Gameplay/SnakeCore/Body/Effects" to="Gameplay" method="_on_snake_core_game_over"]
+[connection signal="body_entered" from="Gameplay/Mapa_1" to="Gameplay/SnakeCore" method="_on_mapa_1_body_collision"]
+[connection signal="body_entered" from="Gameplay/Items" to="Gameplay/SnakeCore" method="_on_itens_body_collision"]
+[connection signal="body_shape_entered" from="Gameplay/Items" to="Gameplay/SnakeCore" method="_on_items_body_shape_entered"]
+[connection signal="timeout" from="Gameplay/TransitionPause" to="Gameplay" method="_on_transition_pause_timeout"]
+[connection signal="timeout" from="Gameplay/Player1_Timer/Dash_duration" to="Gameplay/SnakeCore" method="_on_dash_duration_timeout"]
+[connection signal="timeout" from="Gameplay/Player2_Timer/Dash_duration_P2" to="Gameplay/SnakeCore" method="_on_dash_duration_p_2_timeout"]

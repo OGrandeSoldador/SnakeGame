@@ -1,0 +1,120 @@
+[gd_scene load_steps=18 format=3 uid="uid://c6n480gha70r"]
+
+[ext_resource type="Script" path="res://SnakeCoreScripts/snake.gd" id="1_0ju8k"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/gameplay.gd" id="1_d2bkp"]
+[ext_resource type="Texture2D" uid="uid://ijiuatc7uckm" path="res://assets/Snake Game Assets/Snake Sprites/head.png" id="2_sa6wh"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/body.gd" id="3_qhx5a"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/effects.gd" id="4_hvi17"]
+[ext_resource type="Texture2D" uid="uid://dgwgj2cj2goch" path="res://assets/Snake Game Assets/Snake Sprites/Square.png" id="5_25cw2"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/mapa_1.gd" id="7_yqdej"]
+[ext_resource type="Texture2D" uid="uid://coqwmrpngpfsc" path="res://assets/Tileset/Wood/Wood1.png" id="8_0e48m"]
+[ext_resource type="Script" path="res://SnakeCoreScripts/items.gd" id="8_s2vsu"]
+[ext_resource type="Texture2D" uid="uid://bb38pwuiw5kfl" path="res://assets/Snake Game Assets/Items/AppleSprite 256.png" id="9_qj7gu"]
+[ext_resource type="Texture2D" uid="uid://dtfoe8qjlg23m" path="res://assets/Tileset/Wood/Wood4.png" id="9_rjlgx"]
+[ext_resource type="Texture2D" uid="uid://il0hxpt21nuo" path="res://assets/Tileset/Wood/Wood2.png" id="10_vvh3k"]
+[ext_resource type="Texture2D" uid="uid://byj4skq1k4in5" path="res://assets/Tileset/Wood/Wood3.png" id="11_xwkm5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fv5vo"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i0rcs"]
+size = Vector2(128, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5qc7c"]
+size = Vector2(128, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dah0h"]
+size = Vector2(32, 32)
+
+[node name="Gameplay" type="Node2D"]
+position = Vector2(144, 16)
+script = ExtResource("1_d2bkp")
+
+[node name="SnakeCore" type="CharacterBody2D" parent="."]
+script = ExtResource("1_0ju8k")
+
+[node name="HeadSprite" type="Sprite2D" parent="SnakeCore"]
+z_index = 5
+position = Vector2(-64, -32)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_sa6wh")
+
+[node name="Head_Coll" type="CollisionShape2D" parent="SnakeCore"]
+z_index = 10
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_fv5vo")
+
+[node name="Body" type="Node2D" parent="SnakeCore"]
+script = ExtResource("3_qhx5a")
+
+[node name="Effects" type="Node2D" parent="SnakeCore/Body"]
+script = ExtResource("4_hvi17")
+metadata/_edit_lock_ = true
+
+[node name="BodySprite" type="Sprite2D" parent="SnakeCore/Body"]
+z_index = 3
+position = Vector2(-32, -32)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_25cw2")
+
+[node name="Mapa_1" type="Area2D" parent="."]
+position = Vector2(-16, -16)
+script = ExtResource("7_yqdej")
+
+[node name="Wall_1" type="CollisionShape2D" parent="Mapa_1"]
+visible = false
+position = Vector2(256, 80)
+shape = SubResource("RectangleShape2D_i0rcs")
+
+[node name="Sprite1" type="Sprite2D" parent="Mapa_1/Wall_1"]
+position = Vector2(32, 1.66893e-06)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_0e48m")
+
+[node name="Sprite3" type="Sprite2D" parent="Mapa_1/Wall_1"]
+position = Vector2(-32, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_rjlgx")
+
+[node name="Wall_2" type="CollisionShape2D" parent="Mapa_1"]
+visible = false
+position = Vector2(704, 528)
+shape = SubResource("RectangleShape2D_5qc7c")
+
+[node name="Sprite2" type="Sprite2D" parent="Mapa_1/Wall_2"]
+position = Vector2(-32.0001, -6.10352e-05)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_vvh3k")
+
+[node name="Sprite4" type="Sprite2D" parent="Mapa_1/Wall_2"]
+position = Vector2(32, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_xwkm5")
+
+[node name="Items" type="Area2D" parent="."]
+script = ExtResource("8_s2vsu")
+
+[node name="Apple_Coll" type="CollisionShape2D" parent="Items"]
+position = Vector2(96, -32)
+shape = SubResource("RectangleShape2D_dah0h")
+
+[node name="Apple_Sprite" type="Sprite2D" parent="Items"]
+z_index = 4
+position = Vector2(64, -32)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("9_qj7gu")
+
+[node name="GameVelocity" type="Timer" parent="."]
+
+[node name="GameTime" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="TransitionPause" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="game_over" from="SnakeCore" to="." method="_on_snake_core_game_over"]
+[connection signal="game_over" from="SnakeCore/Body/Effects" to="." method="_on_snake_core_game_over"]
+[connection signal="body_entered" from="Mapa_1" to="SnakeCore" method="_on_mapa_1_body_collision"]
+[connection signal="body_entered" from="Items" to="SnakeCore" method="_on_itens_body_collision"]
+[connection signal="timeout" from="TransitionPause" to="." method="_on_transition_pause_timeout"]

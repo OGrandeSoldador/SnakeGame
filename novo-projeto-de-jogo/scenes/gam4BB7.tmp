@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://pqw2rvfj5ysx"]
+
+[ext_resource type="Script" path="res://scenes/character_body_2d.gd" id="1_piqer"]
+[ext_resource type="Script" path="res://scenes/head.gd" id="2_s2te5"]
+[ext_resource type="Script" path="res://scenes/snake_hit_box.gd" id="3_0mr15"]
+[ext_resource type="Texture2D" uid="uid://dgwgj2cj2goch" path="res://assets/Square.png" id="3_ccrwo"]
+[ext_resource type="Script" path="res://scenes/itens.gd" id="3_s63h3"]
+[ext_resource type="Texture2D" uid="uid://b5t6bdtpl4gqk" path="res://assets/Apple.png" id="4_wiwic"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u54j6"]
+size = Vector2(32, 32)
+
+[node name="Gameplay" type="Node2D"]
+
+[node name="Snake" type="CharacterBody2D" parent="."]
+z_index = 1
+position = Vector2(128, 128)
+script = ExtResource("1_piqer")
+metadata/_edit_group_ = true
+
+[node name="Head" type="Node2D" parent="Snake"]
+script = ExtResource("2_s2te5")
+
+[node name="Body" type="Node2D" parent="Snake"]
+
+[node name="Snake_sprite" type="Sprite2D" parent="Snake"]
+position = Vector2(16, 16)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_ccrwo")
+flip_h = true
+
+[node name="Timer" type="Timer" parent="Snake/Snake_sprite"]
+wait_time = 0.2
+autostart = true
+
+[node name="Snake_Coli" type="CollisionShape2D" parent="Snake"]
+visible = false
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_u54j6")
+one_way_collision_margin = 0.0
+debug_color = Color(0.202296, 0.540805, 0.909307, 0.42)
+script = ExtResource("3_0mr15")
+
+[node name="Itens" type="Node2D" parent="."]
+script = ExtResource("3_s63h3")
+metadata/_edit_group_ = true
+
+[node name="apple" type="Sprite2D" parent="Itens"]
+texture = ExtResource("4_wiwic")
+offset = Vector2(16, 16)
